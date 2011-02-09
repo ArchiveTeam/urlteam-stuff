@@ -1,0 +1,19 @@
+#header {
+    text-align: center;
+}
+#content {
+    margin-bottom: 1.75em;
+}
+#content h2 {
+    margin-top: 1.0em;
+    margin-bottom: 0.25em;
+}
+#content p, ul {
+    margin: 0.5em 1em;
+}
+#qa h4 {
+    margin: 0.5em 1em 0.25em;
+}
+#qa p {
+    margin-left: 2em;
+}

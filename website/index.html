@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title>URLTE.AM</title>
+		<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+		<meta name="author" content="ArchiveTeam" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+        <div id="header">
+            <img src="logo.png" alt="URLTE.AM" /><br />
+            <img src="motto.png" alt="url shortening was a fucking awful idea" />
+        </div>
+        <div id="content">
+            <p>
+Welcome to the Urlteam website. The Urlteam is the <a
+href="http://www.archiveteam.org/">ArchiveTeam</a> subcomitee on <a
+href="http://en.wikipedia.org/wiki/URL_shortener">URL shorteners</a>. We
+believe that they pose a serious threat to the internet's integrity. If one of
+them dies, gets hacked or sells out, millions of links will stop working. Thus
+we preemptively release backups, because URL shorteners are too busy to make
+backups themselves.
+            </p>
+
+            <h2>Releases</h2>
+            <p>
+Every 6 months we release a torrent of all backed up files. When a new torrent
+is released, you can simply delete the old torrent and download the new files
+in the same location. Your BitTorrent client will figure out which files have
+changed and will redownload them, even if you weren't finished yet on the
+previous torrent.
+            </p>
+            <p>
+The latest torrent was released on February 8th, 2011: <a
+href="urlteam-data-2011-02-08.torrent">urlteam-data-2011-02-08.torrent</a>
+            </p>
+            <p>
+The next release is planned for August 2011.
+            </p>
+
+            <h2>Data format</h2>
+            <p>
+All data files in the torrent are simple text files compressed using <a
+href="http://tukaani.org/xz/format.html">LZMA2/xz</a>. The text file format is
+very simple: Each line contains one mapping in the following format: Shortcode,
+pipe (Ascii 0x7C), long URL, line feed (Ascii 0x10). The file is sorted by
+shortcodes using the following order:
+            </p>
+            <ul>
+                <li>Shorter shortcodes come before longer ones</li>
+                <li>Decimal digits</li>
+                <li>Lowercase letters</li>
+                <li>Uppercase letters</li>
+                <li>ASCII value</li>
+            </ul>
+            <p>
+Depending on the URL shortener there might be multiple long URLs for one
+shortcode.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+You can contact us via IRC in <a
+href="irc://irc.efnet.org/urlteam">#urlteam</a> on <a
+href="http://www.efnet.org/">EFNet</a> or leave a message on our <a
+href="http://www.archiveteam.org/index.php?title=Talk:TinyURL">ArchiveTeam Wiki
+talk page</a> (requires free registration).
+            </p>
+            <div id="qa">
+                <h2>Q&amp;A</h2>
+                <h4>Can you do a backup shortener XY please?</h4>
+                <p>
+Maybe. Some shorteners are very fast at banning scrapers which makes it
+impossible to do a backup in an efficient way. Contact us and we may look into
+it.
+                </p>
+                <h4>What about 301works.org? They help URL shorteners with backups.</h4>
+                <p>
+And yet they haven't released a single file for download.
+                </p>
+            </div>
+        </div>
+	</body>
+</html>
