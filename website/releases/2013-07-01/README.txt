@@ -69,6 +69,11 @@
   data from the pre-2011 tr.im, the tr.im-relaunched.txt.xz contains data from
   the post-2013 tr.im.
 
+  twitter-unrolled-urls-spritzer-stream-20111015-20130318.txt.xz: Contains an
+  unsorted list of shorturls and their expanded counterparts sourced from the
+  Twitter spritzer stream. The data from this file has not been integrated into
+  the main release yet.
+
   ===========================================================================
                            http://www.archiveteam.org
                         WE ARE GOING TO RESCUE YOUR SHIT
